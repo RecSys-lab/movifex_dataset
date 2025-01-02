@@ -1743,6 +1743,60 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+/* .starter-section {
+} */
+
+.hugging-face-button {
+  display: inline-block;
+  background-color: #f0c040;
+  color: #444444;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transform: translateY(0.1em);
+}
+
+.hugging-face-button:hover {
+  background-color: #e5ae38;
+  color: black;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.table-stats {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.table-stats th,
+.table-stats td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.table-stats th {
+  font-weight: bold;
+  background-color: #f4f5fe;
+}
+
+.table-stats tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-stats tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-total {
+  font-weight: bold;
+  background-color: #f4f5fe;
 }

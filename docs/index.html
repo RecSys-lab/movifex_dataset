@@ -839,10 +839,9 @@
       <section id="download" class="contact section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
+          <h2>Download</h2>
           <div>
-            <span>Check Our</span>
-            <span class="description-title">Contact</span>
+            <span class="description-title">Download the Dataset</span>
           </div>
         </div>
         <!-- End Section Title -->
@@ -850,19 +849,55 @@
         <div class="container" data-aos="fade" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-lg-4">
+              <!-- Note#1 -->
               <div
                 class="info-item d-flex"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <i class="bi bi-info-square flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Note#1</h3>
+                  <p>
+                    The dataset is comprehensive due to providing thousands of
+                    visual features. Hence, you can consider downloading
+                    <b>the whole</b> or <b>a portion of it</b>.
+                  </p>
                 </div>
               </div>
-              <!-- End Info Item -->
+              <!-- Note#2 -->
+              <div
+                class="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i class="bi bi-info-square flex-shrink-0"></i>
+                <div>
+                  <h3>Note#2</h3>
+                  <p>
+                    The dataset can be downloaded <strong>directly</strong> or
+                    accessed via the <strong>HuggingFace link</strong> for
+                    easier integration (<a href="#benchmark">read more</a>).
+                  </p>
+                </div>
+              </div>
+              <!-- Download Button -->
+              <div
+                class="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                style="text-align: center"
+              >
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset"
+                  target="_blank"
+                  class="hugging-face-button"
+                  >🤗 Download from HuggingFace</a
+                >
+              </div>
+            </div>
 
+            <div class="col-lg-8">
               <div
                 class="info-item d-flex"
                 data-aos="fade-up"
@@ -870,88 +905,85 @@
               >
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <h3>Required Space</h3>
+                  <p>
+                    The detailed size and specifications of the dataset are
+                    outlined in the table below.
+                  </p>
                 </div>
               </div>
-              <!-- End Info Item -->
-
+              <!-- Table -->
               <div
                 class="info-item d-flex"
                 data-aos="fade-up"
-                data-aos-delay="400"
+                data-aos-delay="300"
               >
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
+                <table class="table-stats">
+                  <thead>
+                    <tr>
+                      <th rowspan="2">Feature Type</th>
+                      <th colspan="2">Total File Count</th>
+                      <th colspan="2">Size on Disk</th>
+                    </tr>
+                    <tr>
+                      <th>Inception-3.0</th>
+                      <th>VGG-19</th>
+                      <th>Inception-3.0</th>
+                      <th>VGG-19</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Full Movies</td>
+                      <td>84,872</td>
+                      <td>84,872</td>
+                      <td>35.8 GB</td>
+                      <td>46.1 GB</td>
+                    </tr>
+                    <tr>
+                      <td>Movie Shots</td>
+                      <td>16,713</td>
+                      <td>24,598</td>
+                      <td>7.01 GB</td>
+                      <td>13.3 GB</td>
+                    </tr>
+                    <tr>
+                      <td>Trailers</td>
+                      <td>1,725</td>
+                      <td>1,725</td>
+                      <td>681 MB</td>
+                      <td>885 MB</td>
+                    </tr>
+                    <tr>
+                      <td>Aggregated Full Movies</td>
+                      <td>84,872</td>
+                      <td>84,872</td>
+                      <td>10 MB</td>
+                      <td>19 MB</td>
+                    </tr>
+                    <tr>
+                      <td>Aggregated Movie Shots</td>
+                      <td>16,713</td>
+                      <td>24,598</td>
+                      <td>10 MB</td>
+                      <td>19 MB</td>
+                    </tr>
+                    <tr>
+                      <td>Aggregated Trailers</td>
+                      <td>1,725</td>
+                      <td>1,725</td>
+                      <td>10 MB</td>
+                      <td>19 MB</td>
+                    </tr>
+                    <tr class="table-total">
+                      <td>Total</td>
+                      <td colspan="2">214,505</td>
+                      <td colspan="2">~103.9 GB</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <!-- End Info Item -->
             </div>
-
-            <div class="col-lg-8">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      placeholder="Subject"
-                      required=""
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- End Contact Form -->
           </div>
         </div>
       </section>
@@ -995,7 +1027,7 @@
               </li>
               <li>
                 <a
-                  href="https://huggingface.co/datasets/alitourani/moviefeats_visual"
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset"
                   target="_blank"
                   >Dataset on HuggingFace</a
                 >
