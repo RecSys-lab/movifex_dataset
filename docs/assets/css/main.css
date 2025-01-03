@@ -1062,6 +1062,7 @@ section,
 
 .about .icon-box p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .about .icon-box:hover i {
