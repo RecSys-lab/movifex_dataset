@@ -331,8 +331,7 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Details</h2>
           <div>
-            <span>Check Our</span>
-            <span class="description-title">Details</span>
+            <span class="description-title">Data Structure Description</span>
           </div>
         </div>
         <!-- End Section Title -->
@@ -343,35 +342,147 @@
               data-aos="zoom-out"
               data-aos-delay="100"
             >
-              <img src="assets/img/details-1.png" class="img-fluid" alt="" />
+              <table class="table-stats">
+                <thead>
+                  <tr>
+                    <th>Aspect</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Total number of movies</td>
+                    <td>274</td>
+                  </tr>
+                  <tr>
+                    <td>Average frames extracted per movie</td>
+                    <td>7,732</td>
+                  </tr>
+                  <tr>
+                    <td>Total number of frames (or feature vectors)</td>
+                    <td>2,118,647</td>
+                  </tr>
+                  <tr>
+                    <td>Accumulative number of genres</td>
+                    <td>723</td>
+                  </tr>
+                  <tr>
+                    <td>Average movie ratings</td>
+                    <td>3.88/5.0</td>
+                  </tr>
+                  <tr>
+                    <td>Total number of users</td>
+                    <td>158,146</td>
+                  </tr>
+                  <tr>
+                    <td>Accumulative number of interactions</td>
+                    <td>2,869,024</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-              <h3>
-                Voluptatem dignissimos provident quasi corporis voluptates sit
-                assumenda.
-              </h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <h3>Level I. Primary Categories</h3>
+              <p class="fst-italic" style="text-align: justify">
+                The dataset is organized into
+                <strong>
+                  <a
+                    href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main"
+                    target="_blank"
+                    >six folders <i class="bi bi-box-arrow-up-right"></i></a
+                ></strong>
+                and a
+                <strong
+                  ><a
+                    href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/blob/main/stats.json"
+                    target="_blank"
+                    >stats.json <i class="bi bi-box-arrow-up-right"></i></a
+                ></strong>
+                file containing the meta-data for the sources. It is collected
+                from <strong>274</strong> movie videos, where the identifiers
+                and meta-data of the movies are obtained from the
+                <a
+                  href="https://grouplens.org/datasets/movielens/25m/"
+                  target="_blank"
+                  >MovieLenz-25M</a
+                >
+                dataset. The visual frame (and therefor, feature) extraction
+                rate is
+                <strong>1 FPS</strong>.
               </p>
               <ul>
                 <li>
                   <i class="bi bi-check"></i
                   ><span>
-                    Ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</span
+                    <a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies"
+                      target="_blank"
+                      >full_movies <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    containing the visual features extracted from full-length
+                    movies (frame-level)
+                  </span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    ><a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_shots"
+                      target="_blank"
+                      >movie_shots <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    containing the visual features extracted from full-length
+                    movies' shots (shot-level)</span
                   >
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
                   <span
-                    >Duis aute irure dolor in reprehenderit in voluptate
-                    velit.</span
+                    ><a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_trailers"
+                      target="_blank"
+                      >movie_trailers <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    containing the visual features extracted from movie trailers
+                    (frame-level)</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check"></i
+                  ><span>
+                    <a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies_agg"
+                      target="_blank"
+                      >full_movies_agg <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    containing the aggregated embeddings extracted from
+                    full-length movies
+                  </span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    ><a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_shots_agg"
+                      target="_blank"
+                      >movie_shots_agg <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    containing the aggregated embeddings extracted from
+                    full-length movies' shots</span
                   >
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Ullam est qui quos consequatur eos accusamus.</span>
+                  <span
+                    ><a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_trailers_agg"
+                      target="_blank"
+                      >movie_trailers_agg
+                      <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    containing the aggregated embeddings extracted from movie
+                    trailers</span
+                  >
                 </li>
               </ul>
             </div>
