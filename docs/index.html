@@ -385,19 +385,17 @@
               <h3>Level I. Primary Categories</h3>
               <p class="fst-italic" style="text-align: justify">
                 The dataset is organized into
-                <strong>
-                  <a
-                    href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main"
-                    target="_blank"
-                    >six folders <i class="bi bi-box-arrow-up-right"></i></a
-                ></strong>
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main"
+                  target="_blank"
+                  >six folders <i class="bi bi-box-arrow-up-right"></i
+                ></a>
                 and a
-                <strong
-                  ><a
-                    href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/blob/main/stats.json"
-                    target="_blank"
-                    >stats.json <i class="bi bi-box-arrow-up-right"></i></a
-                ></strong>
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/blob/main/stats.json"
+                  target="_blank"
+                  >stats.json <i class="bi bi-box-arrow-up-right"></i
+                ></a>
                 file containing the meta-data for the sources. It is collected
                 from <strong>274</strong> movie videos, where the identifiers
                 and meta-data of the movies are obtained from the
@@ -493,26 +491,64 @@
               class="col-md-5 order-1 order-md-2 d-flex align-items-center"
               data-aos="zoom-out"
               data-aos-delay="200"
+              style="text-align: center"
             >
-              <img src="assets/img/details-2.png" class="img-fluid" alt="" />
+              <img
+                src="assets/img/cnn.png"
+                class="img-fluid"
+                alt=""
+                width="70%"
+              />
             </div>
             <div
               class="col-md-7 order-2 order-md-1"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3>Corporis temporibus maiores provident</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <h3>Level II. Visual Feature Extractors</h3>
+              <p class="fst-italic" style="text-align: justify">
+                Inside each folder, there are two folders titled
+                <strong>incp3</strong> and <strong>vgg19</strong>, referring to
+                the feature extractor used to generate the visual features,
+                i.e.,
+                <a
+                  href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.html"
+                  target="_blank"
+                  >Inception-v3 (GoogleNet)</a
+                >
+                and
+                <a
+                  href="https://doi.org/10.48550/arXiv.1409.1556"
+                  target="_blank"
+                  >VGG-19</a
+                >, respectively.
               </p>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
-              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-check"></i
+                  ><span>
+                    [sample]:
+                    <a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies/incp3"
+                      target="_blank"
+                      >Inception-v3 <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    and
+                    <a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies/vgg19"
+                      target="_blank"
+                      >VGG-19 <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                    extracted from
+                    <a
+                      href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies"
+                      target="_blank"
+                      >full-length movies
+                      <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
