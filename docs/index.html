@@ -551,6 +551,95 @@
               </ul>
             </div>
           </div>
+          <!-- Item -->
+          <div class="row gy-4 align-items-center features-item">
+            <div
+              class="col-md-5 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <img
+                src="assets/img//folder.png"
+                class="img-fluid"
+                alt=""
+                width="70%"
+              />
+            </div>
+            <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+              <h3>Level III. Contents (Movies & Trailers)</h3>
+              <h6>A: Atomic Features (<i>e.g.,</i> full_movies)</h6>
+              <p class="fst-italic" style="text-align: justify">
+                Regarding the
+                <strong>Atomic visual features (frame- and shot-level)</strong>,
+                (<i>i.e.,</i>
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies"
+                  target="_blank"
+                  >full_movies</a
+                >,
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_shots"
+                  target="_blank"
+                  >movie_shots</a
+                >, and
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_trailers"
+                  target="_blank"
+                  >movie_trailers</a
+                >), each embedding folder (<i>e.g.,</i>
+                <strong>/incp3</strong> or <strong>/vgg19</strong>) contains a
+                set of folders with unique title (<i>e.g.,</i>
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies/incp3/0000008985"
+                  target="_blank"
+                  >0000008985</a
+                >) indicating the <strong>movie-id</strong> in
+                <a
+                  href="https://grouplens.org/datasets/movielens/25m/"
+                  target="_blank"
+                  >MovieLenz-25M</a
+                >
+                dataset. Each folder has a set of <strong>packet</strong> files,
+                which will be further discussed in the next section.
+              </p>
+              <br />
+              <h6>B: Aggregated Features (<i>e.g.,</i> full_movies_agg)</h6>
+              <p class="fst-italic" style="text-align: justify">
+                Regarding the
+                <strong>aggregated visual features</strong>, (<i>i.e.,</i>
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies_agg"
+                  target="_blank"
+                  >full_movies_agg</a
+                >,
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_shots_agg"
+                  target="_blank"
+                  >movie_shots_agg</a
+                >, and
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/movie_trailers_agg"
+                  target="_blank"
+                  >movie_trailers_agg</a
+                >), each embedding folder (<i>e.g.,</i>
+                <strong>/incp3</strong> or <strong>/vgg19</strong>) contains a a
+                set of JSON files with unique titles (<i>e.g.,</i>
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/blob/main/full_movies_agg/incp3/0000002023.json"
+                  target="_blank"
+                  >0000002023</a
+                >) indicating the <strong>movie-id</strong> in
+                <a
+                  href="https://grouplens.org/datasets/movielens/25m/"
+                  target="_blank"
+                  >MovieLenz-25M</a
+                >
+                dataset. Each JSON file has a set of
+                <strong>embeddings</strong>, which will be further discussed in
+                the next section.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- /Details Section -->
