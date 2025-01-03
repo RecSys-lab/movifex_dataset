@@ -635,8 +635,48 @@
                   >MovieLenz-25M</a
                 >
                 dataset. Each JSON file has a set of
-                <strong>embeddings</strong>, which will be further discussed in
-                the next section.
+                <strong>embeddings</strong>, aggregated using
+                <strong>Maximum</strong> and <strong>Mean</strong> methods.
+              </p>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="row gy-4 align-items-center features-item">
+            <div
+              class="col-md-5 order-1 order-md-2 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+              style="text-align: center"
+            >
+              <img
+                src="assets/img/packets.png"
+                class="img-fluid"
+                alt=""
+                width="80%"
+              />
+            </div>
+            <div
+              class="col-md-7 order-2 order-md-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>Level IV. Packets (Atomic Feature Folders)</h3>
+              <p class="fst-italic" style="text-align: justify">
+                To better organize visual features, each movie folder (<i
+                  >e.g.,</i
+                >
+                <a
+                  href="https://huggingface.co/datasets/alitourani/MoViFex_Dataset/tree/main/full_movies/incp3/0000001997"
+                  target="_blank"
+                  >0000001997</a
+                >) has a set of <strong>packets</strong> named as
+                <strong>packet0001.json</strong> to
+                <strong>packet000N.json</strong> in JSON format. Each
+                <strong>packet</strong>
+                contains a set of objects with <strong>frameId</strong> and
+                <strong>embeddings</strong>. In general, every 25 object
+                (frameId-embedding pair) form a packet, except the last packet
+                that can have less objects.
               </p>
             </div>
           </div>
