@@ -1,0 +1,315 @@
+{
+  "MODEL_CHOICE": "amr",
+  "PARALLEL_HPO": true,
+  "USE_GPU_FOR_HPO": true,
+  "SEED": 42,
+  "VERBOSE": true,
+  "SPLIT_MODE": "random",
+  "TEXT_MAX_PARTS": 20,
+  "N_EPOCHS": 20,
+  "TEST_RATIO": 0.2,
+  "COLD_TH": 5,
+  "K_CORE": 50,
+  "SAMPLER": 0.25,
+  "GRID_LIMIT": 8,
+  "TOP_KS": [
+    3,
+    5
+  ],
+  "MOVIE_VARIANT": "movie_shots",
+  "FEATURE_EXTRACTOR": "incp3",
+  "FEATURE_AGGREGATOR": "Max",
+  "LLM_VARIANT": "openai",
+  "TEXT_AUGMENTED": true,
+  "ML_VARIANT": "ml-25m",
+  "MULTI_VARIANTS": [
+    [
+      "concat",
+      null
+    ],
+    [
+      "pca",
+      0.95
+    ],
+    [
+      "cca",
+      40
+    ]
+  ],
+  "RUN_START": 1748084383.5929992,
+  "RUN_ID": "amrml-25m__movie_shots__incp3__Max",
+  "RUN_PATH": "runs/amrml-25m__movie_shots__incp3__Max",
+  "PCA": "<class 'sklearn.decomposition._pca.PCA'>",
+  "CCA": "<class 'sklearn.cross_decomposition._pls.CCA'>",
+  "MF": "<class 'cornac.models.mf.recom_mf.MF'>",
+  "VBPR": "<class 'cornac.models.vbpr.recom_vbpr.VBPR'>",
+  "VMF": "<class 'cornac.models.vmf.recom_vmf.VMF'>",
+  "AMR": "<class 'cornac.models.amr.recom_amr.AMR'>",
+  "VAECF": "<class 'cornac.models.vaecf.recom_vaecf.VAECF'>",
+  "X": "[[1.762752 2.158851 1.350687 ... 2.350389 2.662822 2.014058]\n [2.608933 1.634785 1.19255  ... 2.426218 2.425205 1.659654]\n [1.972484 1.855269 1.289195 ... 1.984248 2.009249 1.556169]\n ...\n [1.794946 1.85176  2.074739 ... 2.192209 2.611574 1.458743]\n [2.160541 1.73297  2.112364 ... 1.972955 2.190603 1.982191]\n [2.052766 1.586996 1.256433 ... 2.462044 3.069387 1.680174]]",
+  "Y": "[[0.335695 0.315035 0.263877 ... 0.249919 0.590989 0.307994]\n [0.349011 0.308467 0.248168 ... 0.266613 0.523793 0.360518]\n [0.565169 0.292788 0.353662 ... 0.252129 0.500748 0.366321]\n ...\n [0.425448 0.30918  0.31008  ... 0.224753 0.460093 0.338984]\n [0.408458 0.295088 0.352251 ... 0.283081 0.412911 0.386632]\n [0.358377 0.296224 0.241857 ... 0.31264  0.514721 0.347111]]",
+  "CUPY": true,
+  "GR_MF": [
+    {
+      "k": 32,
+      "learning_rate": 0.02,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 32,
+      "learning_rate": 0.01,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 32,
+      "learning_rate": 0.005,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.02,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.01,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.005,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 128,
+      "learning_rate": 0.02,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    },
+    {
+      "k": 128,
+      "learning_rate": 0.01,
+      "lambda_reg": 0.01,
+      "max_iter": 50
+    }
+  ],
+  "GR_VAECF": [
+    {
+      "k": 32,
+      "learning_rate": 0.002,
+      "beta": 0.01
+    },
+    {
+      "k": 32,
+      "learning_rate": 0.001,
+      "beta": 0.01
+    },
+    {
+      "k": 32,
+      "learning_rate": 0.0005,
+      "beta": 0.01
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.002,
+      "beta": 0.01
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.001,
+      "beta": 0.01
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.0005,
+      "beta": 0.01
+    },
+    {
+      "k": 128,
+      "learning_rate": 0.002,
+      "beta": 0.01
+    },
+    {
+      "k": 128,
+      "learning_rate": 0.001,
+      "beta": 0.01
+    }
+  ],
+  "GR_VBPR": [
+    {
+      "k": 32,
+      "k2": 8,
+      "learning_rate": 0.002,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 8,
+      "learning_rate": 0.001,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 16,
+      "learning_rate": 0.002,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 16,
+      "learning_rate": 0.001,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 32,
+      "learning_rate": 0.002,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 32,
+      "learning_rate": 0.001,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 64,
+      "k2": 8,
+      "learning_rate": 0.002,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 64,
+      "k2": 8,
+      "learning_rate": 0.001,
+      "lambda_w": 0.01,
+      "lambda_b": 0.01,
+      "n_epochs": 20
+    }
+  ],
+  "GR_VMF": [
+    {
+      "k": 32,
+      "learning_rate": 0.02,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "learning_rate": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.02,
+      "n_epochs": 20
+    },
+    {
+      "k": 64,
+      "learning_rate": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 128,
+      "learning_rate": 0.02,
+      "n_epochs": 20
+    },
+    {
+      "k": 128,
+      "learning_rate": 0.01,
+      "n_epochs": 20
+    },
+    {
+      "k": 256,
+      "learning_rate": 0.02,
+      "n_epochs": 20
+    },
+    {
+      "k": 256,
+      "learning_rate": 0.01,
+      "n_epochs": 20
+    }
+  ],
+  "GR_AMR": [
+    {
+      "k": 32,
+      "k2": 16,
+      "learning_rate": 0.002,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 16,
+      "learning_rate": 0.001,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 32,
+      "learning_rate": 0.002,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 32,
+      "learning_rate": 0.001,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 64,
+      "learning_rate": 0.002,
+      "n_epochs": 20
+    },
+    {
+      "k": 32,
+      "k2": 64,
+      "learning_rate": 0.001,
+      "n_epochs": 20
+    },
+    {
+      "k": 64,
+      "k2": 16,
+      "learning_rate": 0.002,
+      "n_epochs": 20
+    },
+    {
+      "k": 64,
+      "k2": 16,
+      "learning_rate": 0.001,
+      "n_epochs": 20
+    }
+  ],
+  "MAX_K": 5,
+  "LONG": {
+    "CR": "ColdRate",
+    "PB": "PopularityBias",
+    "FA": "Fairness",
+    "NO": "Novelty",
+    "DI": "Diversity",
+    "CB": "CalibrationBias",
+    "RC": "Recall",
+    "ND": "NDCG"
+  },
+  "NUM_WORKERS": 8,
+  "K": 5
+}
