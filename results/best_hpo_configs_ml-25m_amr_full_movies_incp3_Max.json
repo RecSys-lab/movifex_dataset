@@ -1,0 +1,9 @@
+{
+  "AMR_visual_max": {
+    "k": 32,
+    "k2": 16,
+    "learning_rate": 0.001,
+    "n_epochs": 20,
+    "use_gpu": true
+  }
+}
